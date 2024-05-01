@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Pretyping Application Experiment Results</title>
+<link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+<h1>Pretyping Application Experiment Results</h1>
+
+<p>
+Thank you for your participation in this experiment. Your results are as follows:
+</p>
+
+<ul>
+<li>Typing Speed Before Using Pretyping Application: **{{ typing_speed_before }}** words per minute</li>
+<li>Typing Accuracy Before Using Pretyping Application: **{{ typing_accuracy_before }}**%</li>
+<li>Typing Speed After Using Pretyping Application: **{{ typing_speed_after }}** words per minute</li>
+<li>Typing Accuracy After Using Pretyping Application: **{{ typing_accuracy_after }}**%</li>
+</ul>
+
+{% if improvement %}
+<p>
+Congratulations! Your typing speed and accuracy have improved after using the pretyping application.
+</p>
+{% else %}
+<p>
+Your typing speed and accuracy have not improved after using the pretyping application.
+</p>
+{% endif %}
+
+</body>
+
+</html>
+
